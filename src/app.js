@@ -34,7 +34,7 @@ window.onload = function() {
       }
     }
   }
-  
+
   btn.addEventListener("click", function() {
     ul.innerHTML = "";
     if (ext.value != "") {
@@ -44,5 +44,4 @@ window.onload = function() {
     }
     combinaciones();
   });
- 
 };
