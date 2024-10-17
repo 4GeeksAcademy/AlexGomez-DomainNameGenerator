@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   let extensionNueva = document.getElementById("extNew");
-  let btn = document.getElementById("btn");
+  let btnAddExtension = document.getElementById("btnAddExtension");
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
@@ -35,7 +35,7 @@ window.onload = function() {
     }
   }
 
-  btn.addEventListener("click", function() {
+  btnAddExtension.addEventListener("click", function() {
     ul.innerHTML = "";
     if (extensionNueva.value != "") {
       if (
