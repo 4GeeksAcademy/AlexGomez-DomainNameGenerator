@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let ext = document.getElementById("extNew");
+  let extensionNueva = document.getElementById("extNew");
   let btn = document.getElementById("btn");
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
@@ -37,9 +37,11 @@ window.onload = function() {
 
   btn.addEventListener("click", function() {
     ul.innerHTML = "";
-    if (ext.value != "") {
-      if (extension.find(element => element == ext.value) == undefined) {
-        extension.push(ext.value);
+    if (extensionNueva.value != "") {
+      if (
+        extension.find(element => element == extensionNueva.value) == undefined
+      ) {
+        extension.push(extensionNueva.value);
       }
     }
     combinaciones();
